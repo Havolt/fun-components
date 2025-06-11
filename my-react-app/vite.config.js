@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   test: {
+    include: ['**/*.test.jsx'],
     globals: true, // Makes test utilities like 'expect', 'it' available globally
     environment: 'jsdom', // JSDOM environment for browser-like testing
     setupFiles: './src/setupTests.js', // Test setup file

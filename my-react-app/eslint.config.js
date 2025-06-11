@@ -30,4 +30,20 @@ export default [
       ],
     },
   },
+  {
+    files: ['**/*.{test,spec}.{js,jsx}'],
+    languageOptions: {
+      globals: {
+        ...vitest.environments.env.globals, // Inject Vitest globals
+      },
+    },
+    plugins: {
+      vitest, // Include the vitest plugin
+    },
+    rules: {
+      ...vitest.configs.recommended.rules, // Apply recommended Vitest rules
+      // 'vitest/no-focused-tests': 'error',
+      // 'vitest/no-disabled-tests': 'warn',
+    },
+  },
 ]
