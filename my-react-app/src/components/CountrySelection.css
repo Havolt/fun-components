@@ -1,0 +1,15 @@
+.country-selection {
+  position: relative;
+  width: fit-content;
+}
+
+.country-list {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.country-list button {
+  width: 100%;
+}
