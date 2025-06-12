@@ -1,9 +1,13 @@
 import './App.css'
 
+import RatingStars from './components/RatingStars'
+
 function App() {
   return (
     <>
-      <div className="App">Hello World!</div>
+      <div className="App">
+        <RatingStars />
+      </div>
     </>
   )
 }

@@ -1,0 +1,16 @@
+.stars {
+  display: flex;
+  font-size: 40px;
+}
+
+.star.active {
+  color: gold;
+}
+
+.star.hover {
+  color: silver;
+}
+
+.star:hover {
+  cursor: pointer;
+}
